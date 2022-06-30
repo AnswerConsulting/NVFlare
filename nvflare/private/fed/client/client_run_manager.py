@@ -142,7 +142,10 @@ class ClientRunManager(ClientEngineExecutorSpec):
     def build_component(self, config_dict):
         if not self.conf:
             raise RuntimeError("No configurator set up.")
-        return self.conf.build_component(config_dict)
+        try:
+            return self.conf.build_component(config_dict)
+        except Exception as e:
+            return make_reply(ReturnCode.EXECUTION_EXCEPTION)
 
     def aux_send(self, topic: str, request: Shareable, timeout: float, fl_ctx: FLContext) -> Shareable:
         reply = self.client.aux_send(topic, request, timeout, fl_ctx)

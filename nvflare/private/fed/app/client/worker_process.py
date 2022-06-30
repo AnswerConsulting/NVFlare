@@ -118,13 +118,16 @@ def main():
         else:
             args.log_config = os.path.join(startup, "log.config")
 
-        conf = FLClientStarterConfiger(
-            app_root=startup,
-            client_config_file_name=args.fed_client,
-            log_config_file_name=args.log_config,
-            kv_list=args.set,
-        )
-        conf.configure()
+        try:
+            conf = FLClientStarterConfiger(
+                app_root=startup,
+                client_config_file_name=args.fed_client,
+                log_config_file_name=args.log_config,
+                kv_list=args.set,
+            )
+            conf.configure()
+        except Exception as e:
+            print("-------------------------- EXCEPTION IS CAUGHT ------------------------------")
 
         deployer = conf.base_deployer
         federated_client = deployer.create_fed_client()
@@ -178,6 +181,7 @@ def main():
         federated_client.status = ClientStatus.STARTED
         client_runner.run(app_root, args)
     except BaseException as e:
+        print("HELLOOOOO")
         traceback.print_exc()
         print("FL client execution exception: " + str(e))
     finally:

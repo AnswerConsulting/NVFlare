@@ -144,3 +144,5 @@ wrksp/*
 
 # poc run data
 *run_*
+
+nvflare-env

@@ -22,14 +22,16 @@ participants:
 
 # The same methods in all builders are called in their order defined in builders section
 builders:
-  - path: flip_provision.workspace.WorkspaceBuilder
+  - path: flip-provisioner.workspace.WorkspaceBuilder
     args:
       template_file: flip_template.yml
   - path: nvflare.lighter.impl.template.TemplateBuilder
-  - path: nvflare.lighter.impl.static_file.StaticFileBuilder
+  - path: flip-provisioner.static_file.StaticFileBuilder
     args:
       # config_folder can be set to inform NVIDIA FLARE where to get configuration
       config_folder: config
+      client_server_port: 30021
+      client_server_dns: dev-flip-private-api.answerdigital.io
       # app_validator is used to verify if uploaded app has proper structures
       # if not set, no app_validator is included in fed_server.json
       # app_validator: PATH_TO_YOUR_OWN_APP_VALIDATOR

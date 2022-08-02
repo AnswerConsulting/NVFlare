@@ -31,7 +31,7 @@ builders:
       # config_folder can be set to inform NVIDIA FLARE where to get configuration
       config_folder: config
       client_server_port: 30021
-      client_server_dns: dev-flip-private-api.answerdigital.io
+      client_server_dns: api-private.flip.aicentre.co.uk
       # app_validator is used to verify if uploaded app has proper structures
       # if not set, no app_validator is included in fed_server.json
       # app_validator: PATH_TO_YOUR_OWN_APP_VALIDATOR

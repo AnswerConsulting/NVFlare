@@ -51,7 +51,7 @@ builders:
   #           allow_byoc: true
   #           allow_custom_datalist: true
   #     disabled: false
-  - path: nvflare.lighter.impl.cert.CertBuilder
+  - path: flip-provisioner.cert.CertBuilder
   - path: nvflare.lighter.impl.he.HEBuilder
     args:
       poly_modulus_degree: 8192 

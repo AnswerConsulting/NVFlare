@@ -96,7 +96,7 @@ class Communicator:
             )
 
         else:
-            channel = grpc.insecure_channel(**channel_dict, compression=self.compression)
+            channel = grpc.secure_channel(**channel_dict, compression=self.compression, credentials=None)
         return channel
 
     def get_client_state(self, project_name, token, fl_ctx: FLContext):

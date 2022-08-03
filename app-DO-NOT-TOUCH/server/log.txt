@@ -1,0 +1,118 @@
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+E0802 16:31:18.569397500     258 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659454278.569381400","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-02 16:31:18,570 - FederatedServer - INFO - starting secure server at localhost:30021
+deployed FL server trainer.
+2022-08-02 16:31:18,609 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-02 16:31:18,610 - root - INFO - Server started
+E0803 12:18:49.716859200     124 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659525529.716837100","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:18:49,717 - FederatedServer - INFO - starting secure server at localhost:30021
+deployed FL server trainer.
+2022-08-03 12:18:49,767 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:18:49,768 - root - INFO - Server started
+E0803 12:20:34.918747900     191 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659525634.918719100","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:20:34,919 - FederatedServer - INFO - starting secure server at localhost:30021
+deployed FL server trainer.
+2022-08-03 12:20:34,965 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:20:34,966 - root - INFO - Server started
+E0803 12:21:49.590190900     242 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659525709.590168500","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:21:49,590 - FederatedServer - INFO - starting secure server at localhost:30021
+deployed FL server trainer.
+2022-08-03 12:21:49,670 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:21:49,670 - root - INFO - Server started
+E0803 12:23:07.273247700     293 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659525787.273220200","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:23:07,273 - FederatedServer - INFO - starting secure server at localhost:30021
+deployed FL server trainer.
+2022-08-03 12:23:07,313 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:23:07,315 - root - INFO - Server started
+/usr/bin/python3: Error while finding module specification for 'nvflare.private.fed.app.server.server_train' (ModuleNotFoundError: No module named 'nvflare')
+/usr/bin/python3: Error while finding module specification for 'nvflare.private.fed.app.server.server_train' (ModuleNotFoundError: No module named 'nvflare')
+/usr/bin/python3: Error while finding module specification for 'nvflare.private.fed.app.server.server_train' (ModuleNotFoundError: No module named 'nvflare')
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+E0803 12:30:21.394731500     487 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659526221.394708200","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:30:21,395 - FederatedServer - INFO - starting insecure server at localhost:30021
+deployed FL server trainer.
+2022-08-03 12:30:21,433 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:30:21,433 - root - INFO - Server started
+HELLOOOOO
+E0803 12:33:04.830003500     547 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659526384.829973700","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:33:04,830 - FederatedServer - INFO - starting insecure server at localhost:30021
+deployed FL server trainer.
+2022-08-03 12:33:04,861 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:33:04,862 - root - INFO - Server started
+HELLOOOOO
+E0803 12:34:01.837287400     593 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659526441.837259700","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:34:01,837 - FederatedServer - INFO - starting insecure server at localhost:30021
+2022-08-03 12:34:01,838 - FederatedServer - INFO - HELLO - I am run from the repo
+deployed FL server trainer.
+2022-08-03 12:34:01,909 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:34:01,909 - root - INFO - Server started
+HELLOOOOO
+E0803 12:36:13.386874200     676 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659526573.386840700","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-03 12:36:13,387 - FederatedServer - INFO - starting insecure server at localhost:30021
+2022-08-03 12:36:13,388 - FederatedServer - INFO - HELLO - I am run from the repo
+deployed FL server trainer.
+2022-08-03 12:36:13,449 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-03 12:36:13,450 - root - INFO - Server started

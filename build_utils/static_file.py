@@ -20,8 +20,8 @@ from nvflare.lighter.utils import sh_replace
 
 
 class StaticFileBuilder(Builder):
-    def __init__(self, enable_byoc=False, config_folder="", app_validator="", docker_image="", client_port="", client_dns="",
-    server_dns="", server_port=""):
+    def __init__(self, enable_byoc=False, config_folder="", app_validator="", docker_image="", client_port=30021, client_host="",
+    server_host="", server_port=8002, admin_host="", admin_port=8003):
         """Build all static files from template.
 
         Uses the information from project.yml through study to go through the participants and write the contents of
@@ -43,9 +43,11 @@ class StaticFileBuilder(Builder):
         self.docker_image = docker_image
         self.app_validator = app_validator
         self.client_port = client_port
-        self.client_dns = client_dns
-        self.server_dns = server_dns
+        self.client_host = client_host
+        self.server_host = server_host
         self.server_port = server_port
+        self.admin_host = admin_host
+        self.admin_port = admin_port
 
 
     def _write(self, file_full_path, content, mode, exe=False):
@@ -60,13 +62,13 @@ class StaticFileBuilder(Builder):
         dest_dir = self.get_kit_dir(server, ctx)
         server_0 = config["servers"][0]
         server_0["name"] = self.study_name
-        admin_port = server.props.get("admin_port", 8003)
+        admin_port = self.admin_port
         ctx["admin_port"] = admin_port
-        fed_learn_port = server.props.get("fed_learn_port", 8002)
+        fed_learn_port = self.server_port
         ctx["fed_learn_port"] = fed_learn_port
         ctx["server_name"] = server.name
-        server_0["service"]["target"] = f"{server.name}:{fed_learn_port}"
-        server_0["admin_host"] = server.name
+        server_0["service"]["target"] = f"{self.server_host}:{fed_learn_port}"
+        server_0["admin_host"] = self.admin_host
         server_0["admin_port"] = admin_port
         config["enable_byoc"] = server.enable_byoc
         if self.app_validator:
@@ -117,9 +119,7 @@ class StaticFileBuilder(Builder):
     def _build_client(self, client, ctx):
         config = json.loads(self.template["fed_client"])
         dest_dir = self.get_kit_dir(client, ctx)
-        # fed_learn_port = ctx.get("fed_learn_port")
-        # server_name = ctx.get("server_name")
-        config["servers"][0]["service"]["target"] = f"{self.client_dns}:{self.client_port}"
+        config["servers"][0]["service"]["target"] = f"{self.client_host}:{self.client_port}"
         config["servers"][0]["name"] = self.study_name
         config["enable_byoc"] = client.enable_byoc
         replacement_dict = {

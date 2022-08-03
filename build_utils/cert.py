@@ -152,6 +152,7 @@ class CertBuilder(Builder):
         return x509.Name(name)
 
     def finalize(self, ctx):
-        state_dir = self.get_state_dir(ctx)
-        cert_file = os.path.join(state_dir, "cert.pkl")
-        pickle.dump(self.persistent_state, open(cert_file, "wb"))
+        return
+        # state_dir = self.get_state_dir(ctx)
+        # cert_file = os.path.join(state_dir, "cert.pkl")
+        # pickle.dump(self.persistent_state, open(cert_file, "wb"))

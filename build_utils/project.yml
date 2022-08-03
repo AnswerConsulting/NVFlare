@@ -1,0 +1,39 @@
+api_version: 2
+builders:
+- args:
+    template_file: flip_template.yml
+  path: build_utils.workspace.WorkspaceBuilder
+- path: nvflare.lighter.impl.template.TemplateBuilder
+- args:
+    admin_host: localhost
+    admin_port: 8003
+    client_host: api-private.flip.aicentre.co.uk
+    client_port: 30021
+    config_folder: config
+    server_host: 0.0.0.0
+    server_port: 8002
+  path: build_utils.static_file.StaticFileBuilder
+- path: build_utils.cert.CertBuilder
+- args:
+    coeff_mod_bit_sizes:
+    - 60
+    - 40
+    - 40
+    poly_modulus_degree: 8192
+    scale_bits: 40
+    scheme: CKKS
+  path: nvflare.lighter.impl.he.HEBuilder
+- path: nvflare.lighter.impl.signature.SignatureBuilder
+description: flip-project
+name: flip
+participants:
+- admin_port: 8003
+  enable_byoc: true
+  fed_learn_port: 8002
+  name: server
+  org: nvidia
+  type: server
+- enable_byoc: true
+  name: client
+  org: nvidia
+  type: client

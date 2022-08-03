@@ -70,6 +70,7 @@ class WorkspaceBuilder(Builder):
 
     def build(self, study: Study, ctx: dict):
         dirs = [self.get_kit_dir(p, ctx) for p in study.participants]
+        print(dirs)
         self._make_dir(dirs)
 
     def finalize(self, ctx: dict):
@@ -78,8 +79,13 @@ class WorkspaceBuilder(Builder):
             print("After clean-up, rerun the provision command.")
         else:
             current_prod_stage = str(ctx["last_prod_stage"] + 1).zfill(2)
-            current_prod_dir = os.path.join(ctx["workspace"], f"prod_{current_prod_stage}")
-            shutil.move(self.get_wip_dir(ctx), current_prod_dir)
+            current_prod_dir = ctx["workspace"]
+            wip_dir = self.get_wip_dir(ctx)
+            for folder in os.listdir(wip_dir):
+                shutil.move(os.path.join(wip_dir, folder), ctx["workspace"])
+            shutil.rmtree(wip_dir)
+            shutil.rmtree(self.get_resources_dir(ctx))
+            shutil.rmtree(self.get_state_dir(ctx))
             ctx.pop("wip_dir", None)
             print(f"Generated results can be found under {current_prod_dir}.  Builder's wip folder removed.")
             ctx["current_prod_dir"] = current_prod_dir

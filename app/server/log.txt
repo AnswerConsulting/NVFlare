@@ -1,0 +1,55 @@
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+The following files are not secure content.
+fed_server.json
+server.crt
+server.key
+rootCA.pem
+E0802 16:31:18.569397500     258 socket_utils_common_posix.cc:223] check for SO_REUSEPORT: {"created":"@1659454278.569381400","description":"Protocol not available","errno":92,"file":"src/core/lib/iomgr/socket_utils_common_posix.cc","file_line":202,"os_error":"Protocol not available","syscall":"getsockopt(SO_REUSEPORT)"}
+2022-08-02 16:31:18,570 - FederatedServer - INFO - starting secure server at localhost:30021
+deployed FL server trainer.
+2022-08-02 16:31:18,609 - FedAdminServer - INFO - Starting Admin Server localhost on Port 8003
+2022-08-02 16:31:18,610 - root - INFO - Server started

@@ -2,7 +2,7 @@ FROM nvidia/cuda:11.4.2-devel-ubuntu20.04
 
 ARG VERSION=2.0.16
 
-COPY app/flip/prod_00/UCLH app/site-1
+COPY app/site-1/ app/site-1
 
 RUN ls -la \
     && apt update \
